@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <title>Durbek AI</title>
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">D</div>
+        <div>
+          <div class="brand-name">Durbek <span>AI</span></div>
+          <div class="brand-caption">SHAXSIY AI YORDAMCHI</div>
+        </div>
+      </div>
+
+      <button id="newChatBtn" class="new-chat"><span class="plus">+</span> Yangi suhbat</button>
+
+      <div class="side-label">IMKONIYATLAR</div>
+      <div class="feature"><span class="feature-icon">✦</span><span>Savollarga javob</span></div>
+      <div class="feature"><span class="feature-icon">⌘</span><span>Dasturlash yordami</span></div>
+      <div class="feature"><span class="feature-icon">文</span><span>Ko‘p tilli suhbat</span></div>
+
+      <div class="sidebar-bottom">
+        <div class="status-dot"></div>
+        <div><strong>Mahalliy AI</strong><small>Ollama orqali ishlaydi</small></div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark small">D</span> Durbek <span class="blue">AI</span></div>
+        <div class="model-pill"><span class="status-dot"></span> Qwen 3.5 · 2B</div>
+      </header>
+
+      <section id="chatArea" class="chat-area">
+        <div id="welcome" class="welcome">
+          <div class="hero-orb"><div class="orb-core">D</div></div>
+          <div class="eyebrow"><span></span> SIZNING AI YORDAMCHINGIZ</div>
+          <h1>Salom, qanday <span>yordam beray?</span></h1>
+          <p class="welcome-text">Savolingizni yozing. Birgalikda yangi narsalarni o‘rganamiz va g‘oyalarni amalga oshiramiz.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="HTML, CSS va JavaScript o'rtasidagi farqni sodda tushuntir."><span>⌘</span><div><strong>Kod yozishni o‘rganish</strong><small>HTML, CSS va JavaScript</small></div><b>↗</b></button>
+            <button class="suggestion" data-prompt="Menga ingliz tilini o'rganish uchun 30 daqiqalik kunlik reja tuz."><span>文</span><div><strong>Yangi til o‘rganish</strong><small>Oddiy va foydali reja</small></div><b>↗</b></button>
+            <button class="suggestion" data-prompt="Menga qiziqarli va amalga oshirish mumkin bo'lgan 5 ta loyiha g'oyasini ber."><span>✧</span><div><strong>G‘oyalar topish</strong><small>Keyingi loyihangiz uchun</small></div><b>↗</b></button>
+            <button class="suggestion" data-prompt="Sun'iy intellekt qanday ishlashini sodda misollar bilan tushuntir."><span>◉</span><div><strong>AI haqida bilish</strong><small>Sun’iy intellekt asoslari</small></div><b>↗</b></button>
+          </div>
+        </div>
+        <div id="messages" class="messages" aria-live="polite"></div>
+      </section>
+
+      <div class="composer-wrap">
+        <form id="chatForm" class="composer">
+          <textarea id="messageInput" rows="1" placeholder="Durbek AI’dan biror narsa so‘rang..." aria-label="Xabaringizni yozing"></textarea>
+          <div class="composer-bottom">
+            <div class="composer-note"><span class="sparkle">✦</span> Javoblar AI tomonidan yaratiladi</div>
+            <button id="sendBtn" class="send-btn" type="submit" aria-label="Yuborish"><span>Yuborish</span><span class="send-arrow">↑</span></button>
+          </div>
+        </form>
+        <p class="disclaimer">Durbek AI xato qilishi mumkin. Muhim ma’lumotlarni tekshirib oling.</p>
+      </div>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
